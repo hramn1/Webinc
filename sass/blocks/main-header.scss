@@ -1,7 +1,27 @@
 .main-header{
   position: relative;
   background-color: $bg-main;
-  height: 100vh;
+  min-height: 100vh;
+  &::after{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../img/down-arrow.png);
+    width: 21px;
+    height: 40px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -42px;
+    -webkit-animation-name: down-arrow;
+    -moz-animation-name: down-arrow;
+    -o-animation-name: down-arrow;
+    animation-name: down-arrow;
+    -webkit-animation-duration: 1600ms;
+    -moz-animation-duration: 1600ms;
+    -o-animation-duration: 1600ms;
+    animation-duration: 1600ms;
+    animation-iteration-count: infinite;
+  }
 }
 .canvas-header{
   position: absolute;
@@ -13,4 +33,10 @@
 .head-promo{
   margin-top: 10%;
   color: $white;
+}
+@keyframes down-arrow  {
+  0% { transform: translateY(0px);}
+  50% { transform: translateY(-15px);}
+  100% {
+    transform: translateY(0px); }
 }
