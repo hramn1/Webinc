@@ -213,12 +213,12 @@
         Портфолио
       </h2>
       <div class="portfolio-site">
-        <img src="img/fariss.png" class="portfolio-site__item">
-        <img src="img/fariss.png" class="portfolio-site__item">
-        <img src="img/fariss.png" class="portfolio-site__item">
-        <img src="img/fariss.png" class="portfolio-site__item">
-        <img src="img/fariss.png" class="portfolio-site__item">
-        <img src="img/fariss.png" class="portfolio-site__item">
+        <div class="portfolio-site__item" data-title="3d сход развал" data-description="Мы работаем на 3D стенде последнего поколения"><img src="img/fariss.png" alt=""></div>
+        <div class="portfolio-site__item"><img src="img/fariss.png" alt=""></div>
+        <div class="portfolio-site__item"><img src="img/fariss.png" alt=""></div>
+        <div class="portfolio-site__item"><img src="img/fariss.png" alt=""></div>
+        <div class="portfolio-site__item"><img src="img/fariss.png" alt=""></div>
+        <div class="portfolio-site__item"><img src="img/fariss.png" alt=""></div>
       </div>
     </div>
 
@@ -292,48 +292,18 @@
 
   </div>
   <div class="main-footer__contact col-md-6">
-
+    <ul class="contact_list">
+      <li class="contact_list__item contact_list__item--phone"></li>
+      <li class="contact_list__item contact_list__item--adress"></li>
+      <li class="contact_list__item contact_list__item--time"></li>
+      <li class="contact_list__item contact_list__item--email"></li>
+    </ul>
   </div>
 </div>
   </div>
 </footer>
 <script src="js/swiper.min.js"></script>
-<script src="js/script.js"></script>
 <script src="js/jquery.ripples.js"></script>
-<script>
-  $(document).ready(function() {
-    try {
-      $('.water-effect').ripples({
-        resolution: 512,
-        dropRadius: 20, //px
-        perturbance: 0.04,
-      });
-      $('main').ripples({
-        resolution: 128,
-        dropRadius: 10, //px
-        perturbance: 0.04,
-      });
-    }
-    catch (e) {
-      $('.error').show().text(e);
-    }
-
-    $('.disable').show().on('click', function() {
-      $('.main-header').ripples('destroy');
-      $(this).hide();
-    });
-
-    // Automatic drops
-    setInterval(function() {
-      var $el = $('main');
-      var x = Math.random() * $el.outerWidth();
-      var y = Math.random() * $el.outerHeight();
-      var dropRadius = 20;
-      var strength = 0.04 + Math.random() * 0.04;
-
-      $el.ripples('drop', x, y, dropRadius, strength);
-    }, 400);
-  });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>

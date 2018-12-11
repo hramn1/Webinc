@@ -10,4 +10,56 @@
 .portfolio-site{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  &__item{
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before{
+      content: attr(data-title);
+      height: 40%;
+      padding: 30px;
+      font-size: 100%;
+      font-weight: bold;
+      color: #ffffff;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      text-align: center;
+      background: #333333;
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-80px);
+    }
+    &::after{
+      position: absolute;
+      content: attr(data-description);
+      top: 40%;
+      height: 60%;
+      padding: 0 20px;
+      color: #d7bb97;
+      z-index: -1;
+      width: 100%;
+      text-align: center;
+      background: #333333;
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-80px);
+    }
+    &:hover::after{
+      transform: translateX(0);
+    }
+    &:hover::before{
+      transform: translateX(0);
+    }
+    & img {
+      display: block;
+      width: 100%;
+      transition: transform 0.3s ease;
+  	  height:100%;
+    }
+    &:hover img {
+      transform: translateX(100%);
+    }
+  }
 }
