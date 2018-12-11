@@ -21,10 +21,25 @@
       width: 60px;
       height: 50px;
       border-radius: 5px;
-      margin: 10px auto;
+      margin: 10px auto 20px;
       -webkit-background-size: cover;
       background-size: cover;
-      background-image: url(../img/mobilePR-icon.png);
+      background-image: url(../img/sozdanie-site.png);
     }
   }
+}
+.service-mobile::before{
+  background-image: url(../img/mobile-prilog.jpg);
+}
+.service-disain::before{
+  background-image: url(../img/design_icon.png);
+}
+.service-mobile-prol::before{
+  background-image: url(../img/mobile-prilog.jpg);
+}
+.service-seo::before{
+  background-image: url(../img/seo-icon.png);
+}
+.service-reklama::before{
+  background-image: url(../img/Social_Marketing-icon.png);
 }

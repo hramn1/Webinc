@@ -28,9 +28,13 @@
   height: 100%;
   left: 0;
   right: 0;
-  background-image: url(../img/bg2.jpg);
+  background-image: url(../img/bg-head.jpg);
   -webkit-background-size: cover;
   background-size: cover;
+}
+.navbar-brand{
+  padding-top: 7px;
+  padding-left: 10px;
 }
 .canvas-header{
   position: absolute;

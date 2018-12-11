@@ -12,6 +12,7 @@
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
   text-align: center;
   background-color: #4c6381;
+  height: 100%;
   &__title{
     margin-top: 0;
     margin-bottom: 0;
@@ -32,7 +33,7 @@
     padding: 18px 12px;
   }
   &__list{
-    padding: 20px 5px 15px 30px;
+    padding: 20px 5px 35px 30px;
     font-size: 14px;
     text-align: left;
     font-style: italic;
