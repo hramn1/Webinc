@@ -1,4 +1,33 @@
 .main-footer{
   background-color: $bg-main;
   padding: 30px 0 45px;
+  &__social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.social-link{
+  font-size: 0;
+  position: relative;
+  padding-left: 30px;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    left: -20px;
+    top:0;
+    background-repeat: no-repeat;
+  }
+  &--vk::before{
+    background-image: url(../img/vk.svg);
+  }
+  &--fb::before{
+    background-image: url(../img/facebook-f.svg);
+  }
+  &--be::before{
+    background-image: url(../img/behance.svg);
+  }
 }
