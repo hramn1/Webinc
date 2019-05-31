@@ -9,4 +9,11 @@
   margin: 10px auto;
   justify-content: center;
   background-color: $white;
+  &__item{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid $bg-main;
+  }
 }
