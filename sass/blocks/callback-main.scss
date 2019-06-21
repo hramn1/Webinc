@@ -15,5 +15,18 @@
     padding: 10px;
     border-radius: 7px;
     border: 1px solid $bg-main;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+   }
+  &__name {
+    background-image: url(../img/user.svg);
+  }
+  &__tel{
+    background-image: url(../img/phone.svg);
+  }
+  &__email{
+    background-image: url(../img/envelope.svg);
   }
 }

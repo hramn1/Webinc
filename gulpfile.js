@@ -35,7 +35,6 @@ gulp.task("style", function() {
     return  gulp.src("sass/style.scss", { allowEmpty: true })
         .pipe(plumber())
         .pipe(sass())
-        .pipe(gulp.dest("build/css"))
          .pipe(minify())
          .pipe(rename("style.min.css"))
          .pipe(gulp.dest("build/css"))
