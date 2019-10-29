@@ -9,4 +9,24 @@
   margin: 10px auto;
   justify-content: center;
   background-color: $white;
+  &__item{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid $bg-main;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+   }
+  &__name {
+    background-image: url(../img/user.svg);
+  }
+  &__tel{
+    background-image: url(../img/phone.svg);
+  }
+  &__email{
+    background-image: url(../img/envelope.svg);
+  }
 }
